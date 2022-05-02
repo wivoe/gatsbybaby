@@ -3,7 +3,7 @@ require('dotenv').config();
 module.exports = {
   siteMetadata: {
     rss: '/rss.xml',
-    adminUrl: process.env.WP_ADMIN_URL, // Something like https://mywpsite.com/wp-login
+    adminUrl: 'https://homegonesmart.epizy.com/wp-admin', // Something like https://mywpsite.com/wp-login
     menu: [
       {
         title: 'Twitter',
@@ -29,7 +29,7 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress-experimental`,
       options: {
-        url: process.env.WPGRAPHQL_URL,
+        url: 'https://homegonesmart.epizy.com/graphql',
         verbose: true,
         develop: {
           hardCacheMediaFiles: true,
